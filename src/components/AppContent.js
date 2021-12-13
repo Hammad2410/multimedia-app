@@ -40,8 +40,8 @@ const AppContent = () => {
             )
           })}
           {
-            status != '' && (
-              status == 'connected' ?
+            status !== '' && (
+              status === 'connected' ?
                 <Redirect from="/" to="/dashboard" /> :
                 <Redirect from="/" to="/Login" />
             )
